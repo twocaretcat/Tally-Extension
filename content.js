@@ -23,20 +23,20 @@
 		table.appendChild(o[i])
 	}
 
-	table.className = 'jerboa88-Tally-modal-table'
+	table.className = 'twocaretcat-Tally-modal-table'
 	modal.appendChild(table)
 
 	button.appendChild(document.createTextNode('CLOSE'))
-	button.setAttribute('onclick', '(function() {document.getElementsByClassName("jerboa88-Tally-modal")[0].classList.remove("jerboa88-Tally-modal-open")}())')
+	button.setAttribute('onclick', '(function() {document.getElementsByClassName("twocaretcat-Tally-modal")[0].classList.remove("twocaretcat-Tally-modal-open")}())')
 
 	modal.appendChild(button)
 
-	modal.className = 'jerboa88-Tally-modal'
+	modal.className = 'twocaretcat-Tally-modal'
 	document.body.appendChild(modal)
 
 	chrome.runtime.onMessage.addListener(
 		function(request) {
-			modal.classList.add('jerboa88-Tally-modal-open')
+			modal.classList.add('twocaretcat-Tally-modal-open')
 
 			for (let i = 0; i < 8; i++) {
 				document.getElementById(ids[i]).innerHTML = request[ids[i]]

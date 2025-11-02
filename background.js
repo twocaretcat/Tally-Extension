@@ -95,13 +95,13 @@
 	}
 
 	chrome.contextMenus.create({
-		id: 'jerboa88-Tally-count',
+		id: 'twocaretcat-Tally-count',
 		title: 'Tally Word Counter: Count',
 		contexts: ['selection']
 	});
 
 	chrome.contextMenus.onClicked.addListener(function(info, tab) {
-		if (info.menuItemId == 'jerboa88-Tally-count') {
+		if (info.menuItemId == 'twocaretcat-Tally-count') {
 			count(info)
 		}
 	});
